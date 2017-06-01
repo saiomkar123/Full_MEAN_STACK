@@ -4,7 +4,7 @@ var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 var User = require('../models/user');
 var session = require('express-session');
 var jwt = require('jsonwebtoken');
-var secret = 'sai_omkar';
+var secret = '##########';
 
 
 
@@ -32,8 +32,8 @@ module.exports = function(app, passport){
     });
 
     passport.use(new FacebookStrategy({
-        clientID: '1644505948922876',
-        clientSecret: '71c047d24dd9417ef9c54717c216fdf8',
+        clientID: '',
+        clientSecret: '',
         callbackURL: "http://localhost:5698/auth/facebook/callback",
         profileFields: ['id', 'displayName', 'photos', 'email']
     },
@@ -54,8 +54,8 @@ module.exports = function(app, passport){
     ));
 
     passport.use(new TwitterStrategy({
-        consumerKey: '4gtjqPLQ4uDpaL1ZrtUpnMwf2',
-        consumerSecret: 'fvY4wlbIVolA2QauL69iYjtUFIBHTSJCRMnyHlK5ecyJ2yyd1M',
+        consumerKey: '',
+        consumerSecret: '',
         callbackURL: 'http://localhost:5698/auth/twitter/callback',
         userProfileURL: 'https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true'
     }, function(token, tokenSecret, profile, done){
@@ -73,8 +73,8 @@ module.exports = function(app, passport){
     }));
 
     passport.use(new GoogleStrategy({
-        clientID: '50377112411-m16d3007vije9ocf6n2o8pfnrtq3qa29.apps.googleusercontent.com',
-        clientSecret: '8-L0bIVk6aFImExkonzBdFoA',
+        clientID: '',
+        clientSecret: '',
         callbackURL: 'http://localhost:5698/auth/google/callback'
     },
     function(accessToken, refreshToken, profile, done){
