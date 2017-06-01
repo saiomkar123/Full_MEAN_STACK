@@ -1,0 +1,26 @@
+{
+  "name": "meanfullapp",
+  "version": "1.0.0",
+  "description": "Mean Stack Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "omkar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.10.2",
+    "mongoose-title-case": "0.0.4",
+    "mongoose-validator": "^1.2.6",
+    "morgan": "^1.8.2",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  }
+}
